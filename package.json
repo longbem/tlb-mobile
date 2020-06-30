@@ -7,12 +7,13 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "images": "node scripts/images.js"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.11.0",
     "@react-native-community/masked-view": "^0.1.10",
-    "@react-navigation/material-bottom-tabs": "^5.2.12",
+    "@react-navigation/bottom-tabs": "^5.6.1",
     "@react-navigation/native": "^5.6.1",
     "@react-navigation/stack": "^5.6.2",
     "moment": "^2.27.0",
@@ -30,9 +31,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-decorators": "^7.10.4",
     "@babel/runtime": "^7.10.3",
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-transform-typescript-metadata": "^0.3.0",
     "eslint": "^7.3.1",
     "jest": "^26.1.0",
     "metro-react-native-babel-preset": "^0.59.0",
