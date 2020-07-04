@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text } from 'react-native';
 import { CalendarList } from 'react-native-calendars';
-import moment from 'moment';
-djsfksdjfksdf134;
+
 export default function Home() {
-  const [dateCurrent, setDateCurrent] = useState();
+  const [dateCurrent] = useState();
 
   return (
     <View>
@@ -20,7 +19,6 @@ export default function Home() {
             marked: true,
             dotColor: 'red',
             activeOpacity: 0,
-            dotColor: 'reda1',
           },
           '2020-07-04': { disabled: true, disableTouchEvent: true },
         }}
