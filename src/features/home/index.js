@@ -16,7 +16,12 @@ export default function Home() {
         markedDates={{
           '2020-07-01': { selected: true, marked: true, selectedColor: 'blue' },
           '2020-07-02': { marked: true },
-          '2020-07-03': { marked: true, dotColor: 'red', activeOpacity: 0 },
+          '2020-07-03': {
+            marked: true,
+            dotColor: 'red',
+            activeOpacity: 0,
+            dotColor: 'red',
+          },
           '2020-07-04': { disabled: true, disableTouchEvent: true },
         }}
       />

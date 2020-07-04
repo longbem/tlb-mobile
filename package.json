@@ -44,21 +44,18 @@
     "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
     "metro-react-native-babel-preset": "^0.59.0",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
     "react-test-renderer": "16.11.0"
   },
   "jest": {
     "preset": "react-native"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "npm test",
-      "...": "..."
-    }
-  },
   "lint-staged": {
-    "*(.js, .jsx)": [
-      "eslint --fix"
+    "*{.js, .jsx}": [
+      "pretty-quick --staged",
+      "eslint --fix",
+      "git add"
     ]
   },
   "rnpm": {
