@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint .",
     "images": "node scripts/images.js",
-    "precommit": "lint-staged"
+    "pre-commit": "lint-staged"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.11.0",
