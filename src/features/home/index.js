@@ -20,7 +20,6 @@ export default function Home() {
             marked: true,
             dotColor: 'red',
             activeOpacity: 0,
-            dotColor: 'red',
           },
           '2020-07-04': { disabled: true, disableTouchEvent: true },
         }}

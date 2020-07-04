@@ -48,15 +48,15 @@
     "pretty-quick": "^2.0.1",
     "react-test-renderer": "16.11.0"
   },
-  "jest": {
-    "preset": "react-native"
-  },
   "lint-staged": {
-    "*{.js, .jsx}": [
+    "*.{js,jsx}": [
       "pretty-quick --staged",
       "eslint --fix",
       "git add"
     ]
+  },
+  "jest": {
+    "preset": "react-native"
   },
   "rnpm": {
     "assets": [
