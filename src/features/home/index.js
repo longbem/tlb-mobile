@@ -1,28 +1,18 @@
-import React, { useState } from 'react';
-import { View, Text } from 'react-native';
-import { CalendarList } from 'react-native-calendars';
+import React from 'react';
+import { Text, SafeAreaView } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
+import styles from './styles';
+import { Colors } from '@config';
 
 export default function Home() {
-  const [dateCurrent] = useState();
-
   return (
-    <View>
-      <Text>Home</Text>
-      <CalendarList
-        current={dateCurrent}
-        showScrollIndicator={false}
-        horizontal={true}
-        markedDates={{
-          '2020-07-01': { selected: true, marked: true, selectedColor: 'blue' },
-          '2020-07-02': { marked: true },
-          '2020-07-03': {
-            marked: true,
-            dotColor: 'red',
-            activeOpacity: 0,
-          },
-          '2020-07-04': { disabled: true, disableTouchEvent: true },
-        }}
-      />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <LinearGradient
+        start={{ x: 0, y: 0.8 }}
+        end={{ x: 0.9, y: 1.0 }}
+        colors={[Colors.darkTurquoise, Colors.turquoise]}>
+        <Text style={styles.ltbOnline}>LTB-Online</Text>
+      </LinearGradient>
+    </SafeAreaView>
   );
 }
