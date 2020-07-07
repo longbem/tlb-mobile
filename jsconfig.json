@@ -5,7 +5,8 @@
     "paths": {
       "@components": ["src/components"],
       "@features/*": ["src/features/*"],
-      "@navigation/*": ["src/navigation/*"]
+      "@navigation/*": ["src/navigation/*"],
+      "@config": ["src/config"]
     }
   }
 }
