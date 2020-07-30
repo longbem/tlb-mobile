@@ -21,6 +21,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingBottom: 50,
+    borderBottomLeftRadius: 50,
+    borderBottomRightRadius: 50,
   },
   boxImage: {
     borderWidth: 2,
@@ -44,7 +46,7 @@ const styles = StyleSheet.create({
     color: Colors.background,
   },
   box: {
-    width: width * 0.9,
+    width: width * 0.75,
     height: 50,
     backgroundColor: Colors.antiqueWhite,
     top: -25,
@@ -60,6 +62,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     lineHeight: 20,
   },
+  scrollView: { backgroundColor: '#FFFF' },
 });
 
 export default styles;
